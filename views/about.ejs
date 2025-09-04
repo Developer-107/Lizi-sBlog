@@ -1,0 +1,110 @@
+<%- include("./partials/header.ejs") %>
+
+
+
+<section id="aboutMeHeader">
+        
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light px-5">
+            <div class="container px-4 px-lg-5 mx-5">
+                <a class="navbar-brand" href="/">Lizi's blog</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <svg class="svg-inline--fa fa-bars" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"></path></svg><!-- <i class="fas fa-bars"></i> Font Awesome fontawesome.com -->
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about">About me</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+           
+        </nav>
+      
+
+<header class="masthead pt-5 mt-4">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading pt-5">
+                            <h1>About me</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</header>
+</section>
+
+
+<section id="Blogs" class="py-5 my-5 px-5 mx-5">
+    <div class="container px-4 px-lg-5 pt-5 px-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7 w-75">
+                    <p>Hi, I’m Lizi Eloshvili! I’m from Georgia and currently work at TBC Bank. I’ve always been fascinated by international relations, politics, and national security, and I studied political science at Caucasus University. I even had the chance to spend some time in the Netherlands through the Erasmus+ program—so yes, I’m definitely a bit of a globe-trotter at heart.</p>
+
+                    <p>Outside of work, I have a ton of passions that keep me busy and inspired. I love skiing down snowy slopes, enjoying delicious sushi, getting lost in a good book, or binge-watching my favorite anime. I’m also learning French, which has been a fun and sometimes challenging adventure! One of my favorite hobbies is making lists of everything—movies, books, travel plans, you name it—it helps me stay organized and focused on my goals.</p>
+
+                    <p>Traveling is one of my biggest joys, and I love exploring new countries and cultures. I recently went to Thailand and completely fell in love with its beautiful nature, vibrant culture, and amazing food. I also enjoy sharing my adventures and daily life on social media—Instagram, Facebook, and Snapchat (where my friends and I have a huge collection of “streak” images we send each other constantly).</p>
+
+                    <p>I’m naturally curious, a little adventurous, and love discovering new things wherever I go. Whether it’s tackling a challenging project at work, hunting down the most delicious sushi roll, or planning my next big trip, I like to approach life with energy, enthusiasm, and a sense of fun.</p>
+
+                    <p>In short, I’m someone who loves learning, exploring, connecting with people, and enjoying all the little and big adventures that life has to offer.</p>
+
+                </div>
+            </div>
+        </div>
+
+</section>
+<br>
+<footer id="aboutMeFooter" class="border-top">
+            <div class="container px-4 px-lg-5 py-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center pt-2">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                    <a href="<%=instagram%>" target="_blank" rel="noopener noreferrer">
+                                     <span class="fa-stack fa-lg">
+                                            <i class="fas fa-circle fa-stack-2x"></i>
+                                            <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </a>
+                            </li>
+                            <li class="list-inline-item">
+                                    <a href="<%=facebook%>" target="_blank" rel="noopener noreferrer">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                            <a href="<%=snapchat%>"  target="_blank" rel="noopener noreferrer">
+                                     <span class="fa-stack fa-lg">
+                                         <i class="fas fa-circle fa-stack-2x"></i>
+                                         <i class="fab fa-snapchat-ghost fa-stack-1x fa-inverse"></i>
+                                     </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright © Developer-107 <%=currentYear%></div>
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include("./partials/footer.ejs") %>

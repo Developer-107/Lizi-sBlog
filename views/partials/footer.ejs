@@ -1,0 +1,33 @@
+
+
+
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const quill = new Quill('#editor', {
+      theme: 'snow',
+      placeholder: 'Write your article...',
+      modules: {
+        toolbar: [
+          [{ header: [1, 2, 3, false] }],
+          ['bold', 'italic', 'underline', 'strike'],
+          [{ list: 'ordered'}, { list: 'bullet' }],
+          ['link', 'image'],
+          ['clean']
+        ]
+      }
+    });
+
+    // On form submit, copy editor HTML into hidden input
+    const form = document.querySelector("form");
+    if (form) {
+      form.addEventListener("submit", function () {
+        document.querySelector("#content").value = quill.root.innerHTML;
+      });
+    }
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="/js/functions.js" ></script>
+</body>
+</html>
